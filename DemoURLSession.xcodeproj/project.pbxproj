@@ -15,7 +15,7 @@
 		476E1A19290A8D9E001758C8 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A18290A8D9E001758C8 /* ServiceLocator.swift */; };
 		476E1A1E290A8DEB001758C8 /* PushedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A1D290A8DEB001758C8 /* PushedService.swift */; };
 		476E1A21290A8DFB001758C8 /* PresentedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A20290A8DFB001758C8 /* PresentedService.swift */; };
-		476E1A26290A8E74001758C8 /* ExtUIVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A25290A8E74001758C8 /* ExtUIVewController.swift */; };
+		476E1A26290A8E74001758C8 /* UIVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A25290A8E74001758C8 /* UIVewController.swift */; };
 		476E1A28290A8E88001758C8 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A27290A8E88001758C8 /* Assembly.swift */; };
 		476E1A2A290A8E8D001758C8 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A29290A8E8D001758C8 /* Routable.swift */; };
 		476E1A33290A8FB3001758C8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A2E290A8FB3001758C8 /* MainPresenter.swift */; };
@@ -28,6 +28,11 @@
 		476E1A3F290A8FBF001758C8 /* DetailInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A3A290A8FBF001758C8 /* DetailInformationViewController.swift */; };
 		476E1A40290A8FBF001758C8 /* DetailInformationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A3B290A8FBF001758C8 /* DetailInformationAssembly.swift */; };
 		476E1A41290A8FBF001758C8 /* DetailInformationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A3C290A8FBF001758C8 /* DetailInformationInteractor.swift */; };
+		476E1A45290A97BD001758C8 /* TrackModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A44290A97BD001758C8 /* TrackModels.swift */; };
+		476E1A48290AA24A001758C8 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A47290AA24A001758C8 /* TrackCell.swift */; };
+		476E1A4A290AA2AC001758C8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A49290AA2AC001758C8 /* Colors.swift */; };
+		476E1A4C290AC066001758C8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A4B290AC066001758C8 /* UITableView.swift */; };
+		476E1A4E290AC152001758C8 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A4D290AC152001758C8 /* NSObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +46,7 @@
 		476E1A18290A8D9E001758C8 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		476E1A1D290A8DEB001758C8 /* PushedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedService.swift; sourceTree = "<group>"; };
 		476E1A20290A8DFB001758C8 /* PresentedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedService.swift; sourceTree = "<group>"; };
-		476E1A25290A8E74001758C8 /* ExtUIVewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIVewController.swift; sourceTree = "<group>"; };
+		476E1A25290A8E74001758C8 /* UIVewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVewController.swift; sourceTree = "<group>"; };
 		476E1A27290A8E88001758C8 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		476E1A29290A8E8D001758C8 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		476E1A2E290A8FB3001758C8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -54,6 +59,11 @@
 		476E1A3A290A8FBF001758C8 /* DetailInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationViewController.swift; sourceTree = "<group>"; };
 		476E1A3B290A8FBF001758C8 /* DetailInformationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationAssembly.swift; sourceTree = "<group>"; };
 		476E1A3C290A8FBF001758C8 /* DetailInformationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationInteractor.swift; sourceTree = "<group>"; };
+		476E1A44290A97BD001758C8 /* TrackModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModels.swift; sourceTree = "<group>"; };
+		476E1A47290AA24A001758C8 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		476E1A49290AA2AC001758C8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		476E1A4B290AC066001758C8 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		476E1A4D290AC152001758C8 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 		476E19FA290A8B5D001758C8 /* DemoURLSession */ = {
 			isa = PBXGroup;
 			children = (
+				476E1A42290A978C001758C8 /* CoreLayer */,
 				476E1A14290A8D66001758C8 /* ApplicationLayer */,
 				476E1A15290A8D70001758C8 /* BusinessLogicLayer */,
 				476E1A17290A8D82001758C8 /* PresentationLayer */,
@@ -100,6 +111,7 @@
 			children = (
 				476E1A13290A8D57001758C8 /* AppDelegate */,
 				476E1A10290A8C12001758C8 /* Storyboard */,
+				476E1A49290AA2AC001758C8 /* Colors.swift */,
 				476E1A11290A8C68001758C8 /* mockData.json */,
 				476E1A04290A8B5F001758C8 /* Assets.xcassets */,
 			);
@@ -169,6 +181,7 @@
 		476E1A22290A8E41001758C8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				476E1A46290AA237001758C8 /* TableCells */,
 				476E1A2B290A8EAD001758C8 /* Main */,
 				476E1A2D290A8F3F001758C8 /* DetailInformation */,
 			);
@@ -187,7 +200,9 @@
 		476E1A24290A8E4C001758C8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				476E1A25290A8E74001758C8 /* ExtUIVewController.swift */,
+				476E1A25290A8E74001758C8 /* UIVewController.swift */,
+				476E1A4B290AC066001758C8 /* UITableView.swift */,
+				476E1A4D290AC152001758C8 /* NSObject.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +229,30 @@
 				476E1A3A290A8FBF001758C8 /* DetailInformationViewController.swift */,
 			);
 			path = DetailInformation;
+			sourceTree = "<group>";
+		};
+		476E1A42290A978C001758C8 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				476E1A43290A9797001758C8 /* Models */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		476E1A43290A9797001758C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				476E1A44290A97BD001758C8 /* TrackModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		476E1A46290AA237001758C8 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				476E1A47290AA24A001758C8 /* TrackCell.swift */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,20 +326,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				476E1A26290A8E74001758C8 /* ExtUIVewController.swift in Sources */,
+				476E1A4E290AC152001758C8 /* NSObject.swift in Sources */,
+				476E1A26290A8E74001758C8 /* UIVewController.swift in Sources */,
 				476E1A40290A8FBF001758C8 /* DetailInformationAssembly.swift in Sources */,
 				476E1A35290A8FB3001758C8 /* MainViewController.swift in Sources */,
 				476E1A1E290A8DEB001758C8 /* PushedService.swift in Sources */,
 				476E1A19290A8D9E001758C8 /* ServiceLocator.swift in Sources */,
 				476E1A28290A8E88001758C8 /* Assembly.swift in Sources */,
 				476E1A33290A8FB3001758C8 /* MainPresenter.swift in Sources */,
+				476E1A4C290AC066001758C8 /* UITableView.swift in Sources */,
 				476E1A34290A8FB3001758C8 /* MainRouter.swift in Sources */,
 				476E1A41290A8FBF001758C8 /* DetailInformationInteractor.swift in Sources */,
 				476E19FC290A8B5D001758C8 /* AppDelegate.swift in Sources */,
+				476E1A4A290AA2AC001758C8 /* Colors.swift in Sources */,
+				476E1A45290A97BD001758C8 /* TrackModels.swift in Sources */,
 				476E1A3F290A8FBF001758C8 /* DetailInformationViewController.swift in Sources */,
 				476E1A3D290A8FBF001758C8 /* DetailInformationPresenter.swift in Sources */,
 				476E19FE290A8B5D001758C8 /* SceneDelegate.swift in Sources */,
 				476E1A21290A8DFB001758C8 /* PresentedService.swift in Sources */,
+				476E1A48290AA24A001758C8 /* TrackCell.swift in Sources */,
 				476E1A3E290A8FBF001758C8 /* DetailInformationRouter.swift in Sources */,
 				476E1A36290A8FB3001758C8 /* MainAssembly.swift in Sources */,
 				476E1A2A290A8E8D001758C8 /* Routable.swift in Sources */,

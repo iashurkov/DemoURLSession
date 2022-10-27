@@ -8,6 +8,7 @@
 import Foundation
 
 protocol MainViewOutput: AnyObject {
+    func viewDidLoad()
     func openPresentedModule()
 }
 
@@ -18,6 +19,10 @@ final class MainPresenter {
     weak var view: MainViewInput?
     var interactor: MainInteractorInput?
     var router: MainRouterInput?
+    
+    // MARK: Private Properties
+    
+    private var models: TrackModels?
     
     // MARK: Init
     
@@ -36,6 +41,10 @@ final class MainPresenter {
 
 extension MainPresenter: MainViewOutput {
     
+    func viewDidLoad() {
+        self.interactor?.obtainData()
+    }
+    
     func openPresentedModule() {
         self.router?.openPresentedModule()
     }
@@ -45,4 +54,8 @@ extension MainPresenter: MainViewOutput {
 
 extension MainPresenter: MainInteractorOutput {
     
+    func updateView(with models: TrackModels) {
+        self.models = models
+        self.view?.updateView(with: models)
+    }
 }
