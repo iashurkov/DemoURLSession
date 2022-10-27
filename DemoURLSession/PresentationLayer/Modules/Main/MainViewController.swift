@@ -57,14 +57,20 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = Colors.gray
         
+        self.setupNavigationBar()
         self.drawSelf()
         
         self.presenter?.viewDidLoad()
     }
     
     // MARK: Drawing
+    
+    private func setupNavigationBar() {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "Main"
+    }
     
     private func drawSelf() {
         self.view.addSubview(self.tableView)

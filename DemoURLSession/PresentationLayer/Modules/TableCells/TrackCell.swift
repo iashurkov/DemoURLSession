@@ -15,6 +15,7 @@ final class TrackCell: UITableViewCell {
     private var isPlaying = false
     
     private enum Constants {
+        static let spaceForTitle: CGFloat = 16
         static let sizeFontForTitle: CGFloat = 17
         
         static let separatorHeight: CGFloat = 1
@@ -28,7 +29,7 @@ final class TrackCell: UITableViewCell {
     private lazy var separatorView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = Colors.gray
+        view.backgroundColor = Colors.black.withAlphaComponent(0.3)
         
         return view
     }()
@@ -67,6 +68,7 @@ final class TrackCell: UITableViewCell {
     
     private func drawSelf() {
         self.selectionStyle = .none
+        self.backgroundColor = .clear
         self.contentView.backgroundColor = .clear
         
         self.addSubview(self.separatorView)
@@ -84,7 +86,7 @@ final class TrackCell: UITableViewCell {
     // MARK: Get NSLayoutConstraints
     
     private func constraintsForSeparatorView() -> [NSLayoutConstraint] {
-        let topAnchor = self.separatorView.topAnchor.constraint(equalTo: self.topAnchor)
+        let topAnchor = self.separatorView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         let leadingAnchor = self.separatorView.leadingAnchor.constraint(equalTo: self.leadingAnchor)
         let trailingAnchor = self.separatorView.trailingAnchor.constraint(equalTo: self.trailingAnchor)
         let heightAnchor = self.separatorView.heightAnchor.constraint(equalToConstant: Constants.separatorHeight)
@@ -96,8 +98,8 @@ final class TrackCell: UITableViewCell {
     
     private func constraintsForTitleLabel() -> [NSLayoutConstraint] {
         let centerYAnchor = self.titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
-        let leadingAnchor = self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16)
-        let trailingAnchor = self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
+        let leadingAnchor = self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Constants.spaceForTitle)
+        let trailingAnchor = self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Constants.spaceForTitle)
         
         return [
             centerYAnchor, leadingAnchor, trailingAnchor
