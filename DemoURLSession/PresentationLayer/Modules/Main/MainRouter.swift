@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MainRouterInput: AnyObject {
-    func openPresentedModule()
+    func openPresentedModule(with model: TrackModel)
 }
 
 final class MainRouter {
@@ -35,10 +35,10 @@ final class MainRouter {
 
 extension MainRouter: MainRouterInput {
     
-    func openPresentedModule() {
-        guard let presentedAssembly = self.serviceLocator.resolve(DetailInformationAssembly.self) else { fatalError() }
+    func openPresentedModule(with model: TrackModel) {
+        guard let detailInformationAssembly = self.serviceLocator.resolve(DetailInformationAssembly.self) else { fatalError() }
         
-        let presentedViewController = presentedAssembly.configureModule()
-        self.view?.present(presentedViewController, modalPresentationStyle: .formSheet)
+        let pushedViewController = detailInformationAssembly.configureModule(with: model)
+        self.view?.push(pushedViewController)
     }
 }

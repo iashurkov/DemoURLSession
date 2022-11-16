@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DetailInformationViewOutput: AnyObject {
+protocol DetailInformationViewOutput: ViewOutput {
     func closeModule()
 }
 
@@ -19,10 +19,16 @@ final class DetailInformationPresenter {
     var interactor: DetailInformationInteractorInput?
     var router: DetailInformationRouterInput?
     
+    // MARK: Private Properties
+    
+    private let model: TrackModel
+    
     // MARK: Init
     
-    init() {
+    init(model: TrackModel) {
         print("INIT : ✅ : DetailInformationPresenter")
+        
+        self.model = model
     }
     
     // MARK: Deinit
@@ -35,6 +41,10 @@ final class DetailInformationPresenter {
 // MARK: - DetailInformationViewOutput
 
 extension DetailInformationPresenter: DetailInformationViewOutput {
+    
+    func viewDidLoad() {
+        self.view?.didObtainView(with: self.model)
+    }
     
     func closeModule() {
         self.router?.closeModule()

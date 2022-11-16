@@ -125,6 +125,10 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("[ ## ] User selected cell with id = \(indexPath.row)")
+        
+        if let model = self.model?.result[indexPath.row] {
+            self.presenter?.openPresentedModule(with: model)
+        }
     }
 }
 

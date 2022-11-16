@@ -12,18 +12,12 @@ final class TrackCell: UITableViewCell {
     // MARK: Private properties
     
     private var model: TrackModel?
-    private var isPlaying = false
     
     private enum Constants {
         static let spaceForTitle: CGFloat = 16
         static let sizeFontForTitle: CGFloat = 17
         
         static let separatorHeight: CGFloat = 1
-        
-        static let buttonSize: CGFloat = 24
-        
-        static let isPlaying = UIImage(systemName: "play.fill")
-        static let isPause = UIImage(systemName: "pause.fill")
     }
     
     private lazy var separatorView: UIView = {

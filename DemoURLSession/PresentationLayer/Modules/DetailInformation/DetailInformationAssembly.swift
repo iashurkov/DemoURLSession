@@ -29,9 +29,9 @@ final class DetailInformationAssembly {
 
 extension DetailInformationAssembly: Assembly {
     
-    func configureModule() -> UIViewController {
+    func configureModule(with model: TrackModel) -> UIViewController {
         let view = DetailInformationViewController()
-        let presenter = DetailInformationPresenter()
+        let presenter = DetailInformationPresenter(model: model)
         let interactor = DetailInformationInteractor()
         let router = DetailInformationRouter()
         
@@ -45,6 +45,6 @@ extension DetailInformationAssembly: Assembly {
         
         router.view = view
         
-        return view.wrappedInNavigationController()
+        return view
     }
 }

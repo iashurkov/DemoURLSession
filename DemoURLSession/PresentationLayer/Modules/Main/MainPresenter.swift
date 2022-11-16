@@ -7,9 +7,8 @@
 
 import Foundation
 
-protocol MainViewOutput: AnyObject {
-    func viewDidLoad()
-    func openPresentedModule()
+protocol MainViewOutput: ViewOutput {
+    func openPresentedModule(with model: TrackModel)
 }
 
 final class MainPresenter {
@@ -45,8 +44,8 @@ extension MainPresenter: MainViewOutput {
         self.interactor?.obtainData()
     }
     
-    func openPresentedModule() {
-        self.router?.openPresentedModule()
+    func openPresentedModule(with model: TrackModel) {
+        self.router?.openPresentedModule(with: model)
     }
 }
 

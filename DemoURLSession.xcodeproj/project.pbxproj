@@ -33,6 +33,7 @@
 		476E1A4A290AA2AC001758C8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A49290AA2AC001758C8 /* Colors.swift */; };
 		476E1A4C290AC066001758C8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A4B290AC066001758C8 /* UITableView.swift */; };
 		476E1A4E290AC152001758C8 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E1A4D290AC152001758C8 /* NSObject.swift */; };
+		AA5EA62329243B1500FD6465 /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EA62229243B1500FD6465 /* ViewOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		476E1A49290AA2AC001758C8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		476E1A4B290AC066001758C8 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		476E1A4D290AC152001758C8 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		AA5EA62229243B1500FD6465 /* ViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			children = (
 				476E1A29290A8E8D001758C8 /* Routable.swift */,
 				476E1A27290A8E88001758C8 /* Assembly.swift */,
+				AA5EA62229243B1500FD6465 /* ViewOutput.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				476E1A4A290AA2AC001758C8 /* Colors.swift in Sources */,
 				476E1A45290A97BD001758C8 /* TrackModels.swift in Sources */,
 				476E1A3F290A8FBF001758C8 /* DetailInformationViewController.swift in Sources */,
+				AA5EA62329243B1500FD6465 /* ViewOutput.swift in Sources */,
 				476E1A3D290A8FBF001758C8 /* DetailInformationPresenter.swift in Sources */,
 				476E19FE290A8B5D001758C8 /* SceneDelegate.swift in Sources */,
 				476E1A21290A8DFB001758C8 /* PresentedService.swift in Sources */,

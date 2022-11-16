@@ -45,11 +45,9 @@ extension MainInteractor: MainInteractorInput {
                 let decoder = JSONDecoder()
                 let models = try decoder.decode(TrackModels.self, from: data)
                 
-                print("[ ## ] Obtain data from JSON = \(models)")
-                
                 self.presenter?.updateView(with: models)
             } catch {
-                print("error:\(error)")
+                print("❗️ERROR : \(error)")
             }
         }
     }
